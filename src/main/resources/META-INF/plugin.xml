@@ -10,8 +10,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.huangkl1024.javarunconfigurationinterceptor.toolWindow.MyToolWindowFactory"
-                    id="MyToolWindow"/>
         <runConfigurationExtension
                 implementation="com.github.huangkl1024.javarunconfigurationinterceptor.extension.ApplicationConfigurationInterceptor"/>
         <applicationConfigurable
@@ -26,10 +24,4 @@
                 displayName="Java程序运行配置拦截器（项目）"
                 nonDefaultProject="true"/>
     </extensions>
-
-    <applicationListeners>
-        <listener
-                class="com.github.huangkl1024.javarunconfigurationinterceptor.listener.MyApplicationActivationListener"
-                topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
