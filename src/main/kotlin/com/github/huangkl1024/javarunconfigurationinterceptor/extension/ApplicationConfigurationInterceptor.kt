@@ -3,8 +3,8 @@ package com.github.huangkl1024.javarunconfigurationinterceptor.extension
 import com.github.huangkl1024.javarunconfigurationinterceptor.persistent.ApplicationSettings
 import com.github.huangkl1024.javarunconfigurationinterceptor.persistent.ProjectSettings
 import com.github.huangkl1024.javarunconfigurationinterceptor.util.JvmArgsParser
+import com.intellij.execution.JavaRunConfigurationBase
 import com.intellij.execution.RunConfigurationExtension
-import com.intellij.execution.application.ApplicationConfiguration
 import com.intellij.execution.configurations.CompositeParameterTargetedValue
 import com.intellij.execution.configurations.JavaParameters
 import com.intellij.execution.configurations.RunConfigurationBase
@@ -14,7 +14,7 @@ import com.intellij.util.execution.ParametersListUtil
 
 class ApplicationConfigurationInterceptor : RunConfigurationExtension() {
     override fun isApplicableFor(configuration: RunConfigurationBase<*>): Boolean {
-        return configuration is ApplicationConfiguration
+        return configuration is JavaRunConfigurationBase
     }
 
     override fun <T : RunConfigurationBase<*>?> updateJavaParameters(configuration: T & Any, params: JavaParameters, runnerSettings: RunnerSettings?) {
