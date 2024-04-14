@@ -1,4 +1,4 @@
-package com.github.huangkl1024.javarunconfigurationinterceptor.services
+package com.github.huangkl1024.javarunconfigurationinterceptor.service
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger

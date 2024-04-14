@@ -1,4 +1,4 @@
-package com.github.huangkl1024.javarunconfigurationinterceptor.listeners
+package com.github.huangkl1024.javarunconfigurationinterceptor.listener
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

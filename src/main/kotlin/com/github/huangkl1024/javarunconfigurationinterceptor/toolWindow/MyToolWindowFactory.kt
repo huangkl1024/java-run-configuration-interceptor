@@ -9,7 +9,7 @@ import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
 import com.github.huangkl1024.javarunconfigurationinterceptor.MyBundle
-import com.github.huangkl1024.javarunconfigurationinterceptor.services.MyProjectService
+import com.github.huangkl1024.javarunconfigurationinterceptor.service.MyProjectService
 import javax.swing.JButton
 
 
