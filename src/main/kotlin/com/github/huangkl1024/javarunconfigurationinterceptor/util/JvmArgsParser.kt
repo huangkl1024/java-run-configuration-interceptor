@@ -7,7 +7,7 @@ object JvmArgsParser {
         if (jvmArgsStr.isNullOrBlank()) {
             return emptyList()
         }
-        val split = jvmArgsStr.split("[\t\n]")
+        val split = jvmArgsStr.split(" ", "\t", "\n")
         return split.stream()
                 .map { it.trim() }
                 .filter { it.isNotBlank() }
