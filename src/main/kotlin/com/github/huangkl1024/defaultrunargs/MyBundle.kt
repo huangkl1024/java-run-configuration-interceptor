@@ -1,4 +1,4 @@
-package com.github.huangkl1024.javarunconfigurationinterceptor
+package com.github.huangkl1024.defaultrunargs
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
