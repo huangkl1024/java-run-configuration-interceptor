@@ -1,6 +1,6 @@
-package com.github.huangkl1024.defaultrunargs.project
+package com.github.huangkl1024.defaultjvmargs.project
 
-import com.github.huangkl1024.defaultrunargs.MyBundle
+import com.github.huangkl1024.defaultjvmargs.MyBundle
 import com.intellij.execution.util.ListTableWithButtons
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.modules
@@ -72,7 +72,7 @@ class ModuleJvmArgsTable(private val project: Project) : ListTableWithButtons<Mo
     }
 
     class ModuleNameColumnInfo(private val moduleNamesGetter: () -> Array<String>) :
-        ColumnInfo<ModuleJvmArgsItem, String>(MyBundle.message("default.run.args.project.settings.module.jvm.args.table.column.module.name")) {
+        ColumnInfo<ModuleJvmArgsItem, String>(MyBundle.message("default.jvm.args.project.settings.module.jvm.args.table.column.module.name")) {
         override fun valueOf(item: ModuleJvmArgsItem?): String? {
             return item?.moduleName
         }
@@ -91,7 +91,7 @@ class ModuleJvmArgsTable(private val project: Project) : ListTableWithButtons<Mo
     }
 
     class JvmArgsColumnInfo :
-        ColumnInfo<ModuleJvmArgsItem, String>(MyBundle.message("default.run.args.project.settings.module.jvm.args.table.column.jvm.args")) {
+        ColumnInfo<ModuleJvmArgsItem, String>(MyBundle.message("default.jvm.args.project.settings.module.jvm.args.table.column.jvm.args")) {
         override fun valueOf(item: ModuleJvmArgsItem?): String? {
             return item?.jvmArgs
         }

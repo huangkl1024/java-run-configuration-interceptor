@@ -1,4 +1,4 @@
-package com.github.huangkl1024.defaultrunargs.project
+package com.github.huangkl1024.defaultjvmargs.project
 
 
 class ModuleJvmArgsItem() {

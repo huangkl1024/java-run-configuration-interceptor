@@ -1,7 +1,7 @@
-package com.github.huangkl1024.defaultrunargs.project
+package com.github.huangkl1024.defaultjvmargs.project
 
-import com.github.huangkl1024.defaultrunargs.AbstractSettingsPanel
-import com.github.huangkl1024.defaultrunargs.MyBundle
+import com.github.huangkl1024.defaultjvmargs.AbstractSettingsPanel
+import com.github.huangkl1024.defaultjvmargs.MyBundle
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogPanel
 import com.intellij.ui.dsl.builder.AlignX
@@ -14,8 +14,8 @@ class ProjectSettingsPanel(project: Project) : AbstractSettingsPanel {
 
     private val root = panel {
         val persistentData = ProjectSettingsPersistentData.getInstance(project)
-        group(MyBundle.message("default.run.args.project.settings.project")) {
-            row(MyBundle.message("default.run.args.project.settings.jvm.args")) {
+        group(MyBundle.message("default.jvm.args.project.settings.project")) {
+            row(MyBundle.message("default.jvm.args.project.settings.jvm.args")) {
                 expandableTextField()
                     .bindText({
                         persistentData.state.jvmArgs.orEmpty()
@@ -24,7 +24,7 @@ class ProjectSettingsPanel(project: Project) : AbstractSettingsPanel {
                     .align(AlignX.FILL)
             }.layout(RowLayout.PARENT_GRID)
         }
-        group(MyBundle.message("default.run.args.project.settings.module.jvm.args.table.title")) {
+        group(MyBundle.message("default.jvm.args.project.settings.module.jvm.args.table.title")) {
             row {
                 cell(moduleJvmArgsTable.component)
                     .align(AlignX.FILL)

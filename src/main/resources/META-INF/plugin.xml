@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.huangkl1024.defaultrunargs</id>
-    <name>Default Run Args</name>
+    <id>com.github.huangkl1024.defaultjvmargs</id>
+    <name>Default Jvm Args</name>
     <vendor>huangkl1024</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -11,19 +11,19 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <runConfigurationExtension
-                implementation="com.github.huangkl1024.defaultrunargs.DefaultRunArgsExtension"/>
+                implementation="com.github.huangkl1024.defaultjvmargs.DefaultJvmArgsExtension"/>
         <applicationConfigurable
                 parentId="tools"
-                instance="com.github.huangkl1024.defaultrunargs.application.ApplicationSettings"
-                id="com.github.huangkl1024.defaultrunargs.application.ApplicationSettings"
+                instance="com.github.huangkl1024.defaultjvmargs.application.ApplicationSettings"
+                id="com.github.huangkl1024.defaultjvmargs.application.ApplicationSettings"
                 bundle="messages.MyBundle"
-                key="default.run.args.application.settings.display.name"/>
+                key="default.jvm.args.application.settings.display.name"/>
         <projectConfigurable
                 parentId="tools"
-                instance="com.github.huangkl1024.defaultrunargs.project.ProjectSettings"
-                id="com.github.huangkl1024.defaultrunargs.project.ProjectSettings"
+                instance="com.github.huangkl1024.defaultjvmargs.project.ProjectSettings"
+                id="com.github.huangkl1024.defaultjvmargs.project.ProjectSettings"
                 bundle="messages.MyBundle"
-                key="default.run.args.project.settings.display.name"
+                key="default.jvm.args.project.settings.display.name"
                 nonDefaultProject="true"/>
     </extensions>
 </idea-plugin>

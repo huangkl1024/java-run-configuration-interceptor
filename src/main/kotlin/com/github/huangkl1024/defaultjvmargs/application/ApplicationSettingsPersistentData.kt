@@ -1,4 +1,4 @@
-package com.github.huangkl1024.defaultrunargs.application
+package com.github.huangkl1024.defaultjvmargs.application
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.PersistentStateComponent
@@ -8,7 +8,7 @@ import com.intellij.openapi.components.Storage
 import com.intellij.util.xmlb.XmlSerializerUtil
 
 @Service(Service.Level.APP)
-@State(name = "DefaultRunArgs", storages = [Storage("ApplicationSettings.xml")])
+@State(name = "DefaultJvmArgs", storages = [Storage("DefaultJvmArgs.xml")])
 class ApplicationSettingsPersistentData : PersistentStateComponent<ApplicationSettingsPersistentData> {
     var jvmArgs: String = ""
 

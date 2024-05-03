@@ -1,7 +1,7 @@
-package com.github.huangkl1024.defaultrunargs.project
+package com.github.huangkl1024.defaultjvmargs.project
 
-import com.github.huangkl1024.defaultrunargs.AbstractSettings
-import com.github.huangkl1024.defaultrunargs.MyBundle
+import com.github.huangkl1024.defaultjvmargs.AbstractSettings
+import com.github.huangkl1024.defaultjvmargs.MyBundle
 import com.intellij.openapi.project.Project
 
 class ProjectSettings(private val project: Project) : AbstractSettings<ProjectSettingsPanel>() {
@@ -12,6 +12,6 @@ class ProjectSettings(private val project: Project) : AbstractSettings<ProjectSe
 
 
     override fun getDisplayName(): String {
-        return MyBundle.message("default.run.args.project.settings.display.name")
+        return MyBundle.message("default.jvm.args.project.settings.display.name")
     }
 }

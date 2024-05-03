@@ -1,15 +1,15 @@
-package com.github.huangkl1024.defaultrunargs
+package com.github.huangkl1024.defaultjvmargs
 
-import com.github.huangkl1024.defaultrunargs.application.ApplicationSettingsPersistentData
-import com.github.huangkl1024.defaultrunargs.project.ProjectSettingsPersistentData
-import com.github.huangkl1024.defaultrunargs.project.ProjectSettingsState
+import com.github.huangkl1024.defaultjvmargs.application.ApplicationSettingsPersistentData
+import com.github.huangkl1024.defaultjvmargs.project.ProjectSettingsPersistentData
+import com.github.huangkl1024.defaultjvmargs.project.ProjectSettingsState
 import com.intellij.execution.JavaRunConfigurationBase
 import com.intellij.execution.RunConfigurationExtension
 import com.intellij.execution.configurations.*
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.util.execution.ParametersListUtil
 
-class DefaultRunArgsExtension : RunConfigurationExtension() {
+class DefaultJvmArgsExtension : RunConfigurationExtension() {
     override fun isApplicableFor(configuration: RunConfigurationBase<*>): Boolean {
         return configuration is JavaRunConfigurationBase
     }

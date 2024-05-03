@@ -1,6 +1,5 @@
-package com.github.huangkl1024.javarunconfigurationinterceptor.util
+package com.github.huangkl1024.defaultjvmargs
 
-import com.github.huangkl1024.defaultrunargs.ArgsUtils
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import junit.framework.TestCase
 

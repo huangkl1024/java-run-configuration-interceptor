@@ -1,4 +1,4 @@
-package com.github.huangkl1024.defaultrunargs
+package com.github.huangkl1024.defaultjvmargs
 
 import com.intellij.openapi.ui.DialogPanel
 

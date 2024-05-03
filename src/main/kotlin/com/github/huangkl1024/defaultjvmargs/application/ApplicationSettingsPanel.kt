@@ -1,7 +1,7 @@
-package com.github.huangkl1024.defaultrunargs.application
+package com.github.huangkl1024.defaultjvmargs.application
 
-import com.github.huangkl1024.defaultrunargs.AbstractSettingsPanel
-import com.github.huangkl1024.defaultrunargs.MyBundle
+import com.github.huangkl1024.defaultjvmargs.AbstractSettingsPanel
+import com.github.huangkl1024.defaultjvmargs.MyBundle
 import com.intellij.openapi.ui.DialogPanel
 import com.intellij.ui.dsl.builder.AlignX
 import com.intellij.ui.dsl.builder.bindText
@@ -11,7 +11,7 @@ class ApplicationSettingsPanel : AbstractSettingsPanel {
 
     private val root = panel {
         val persistentData = ApplicationSettingsPersistentData.getInstance()
-        row(MyBundle.message("default.run.args.application.settings.jvm.args")) {
+        row(MyBundle.message("default.jvm.args.application.settings.jvm.args")) {
             expandableTextField()
                 .bindText(persistentData::jvmArgs)
                 .resizableColumn()
