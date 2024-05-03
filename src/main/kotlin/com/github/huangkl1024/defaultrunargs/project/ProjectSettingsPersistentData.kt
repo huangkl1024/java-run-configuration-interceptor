@@ -15,4 +15,5 @@ class ProjectSettingsPersistentData : SimplePersistentStateComponent<ProjectSett
 
 class ProjectSettingsState : BaseState() {
     var jvmArgs by string()
+    var moduleJvmArgsList by list<ModuleJvmArgsItem>()
 }
