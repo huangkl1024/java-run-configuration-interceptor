@@ -1,44 +1,46 @@
-# default-jvm-args
+# Default Jvm Args
 
 ![Build](https://github.com/huangkl1024/default-jvm-args-intellij-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+> 在项目运行前添加默认的 JVM 参数。
+
+## 主要特性
+
+1. 支持全局配置默认的 JVM 参数。
+2. 支持为项目配置默认的 JVM 参数。
+3. 之前为项目指定模块配置默认的 JVM 参数。
+
+## 安装说明
+
+### 离线安装
+
+1. 打开插件市场，操作路径为 `Settings/Preferences → Plugins` 。
+2. 打开 `⚙️ → Install plugin from disk...`，在弹窗的对话框里选择下载好的插件 `jar` 安装。
+
+### 插件市场安装
+
+1. 打开插件市场，操作路径为 `Settings/Preferences → Plugins → Marketplace`。
+2. 搜索 `Default Jvm Args` 。
+3. 选择搜索的插件并安装。
+
+
+## 使用说明
+
+1. 打开设置，进入到 Tools 分组，操作路径为 `Settings/Preferences → Tools`。
+2. 在 Tools 分组下，有 `Default Jvm Args(Global)` 和 `Default Jvm Args(Project)` 配置项；`Default Jvm Args(Global)` 用于配置全局默认的 JVM 参数； `Default Jvm Args(Project)` 用于配置项目级别默认的 JVM 参数。
+3. 根据需要在配置里输入相关的 JVM 参数保存。
+
 <!-- Plugin description end -->
-
-## Installation
-
-- Using the IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "default-jvm-args"</kbd> >
-  <kbd>Install</kbd>
-  
-- Manually:
-
-  Download the [latest release](https://github.com/huangkl1024/default-jvm-args/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
-
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
+
 [docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
