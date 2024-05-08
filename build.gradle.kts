@@ -56,13 +56,6 @@ koverReport {
     }
 }
 
-
-tasks.forEach {
-    if (it.name == "verifyPlugin") {
-        it.enabled = false
-    }
-}
-
 tasks {
     wrapper {
         gradleVersion = properties("gradleVersion").get()

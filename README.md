@@ -8,6 +8,47 @@
 <!-- Plugin description -->
 
 
+> Add default JVM parameters before running the Java project.
+
+## Main features
+
+1. Supports configuring default JVM parameters globally.
+2. Supports configuring default JVM parameters for a project.
+3. Configure the default JVM parameters for a specific module of a project.
+
+
+## Installation instructions
+
+
+### Offline Installation
+
+
+1. Open the Plugin Marketplace at `Settings/Preferences → Plugins`. 
+
+2. Open `⚙️ → Install plugin from disk.... `, in the pop-up dialog box, select the downloaded plugin `jar` to install.
+
+
+### Plugin Marketplace Installation
+
+
+1. Open the Plugin Marketplace at `Settings/Preferences → Plugins → Marketplace`. 
+
+2. Search for `Default Jvm Args`. 
+
+3. Select the searched plugin and install it.
+
+
+## Instructions for use
+
+
+1. Open Settings and go to the Tools group at `Settings/Preferences → Tools`. 
+
+2. Under the Tools group, there are `Default Jvm Args(Global)` and `Default Jvm Args(Project)` configurations. 
+   1. `Default Jvm Args(Global)` is used to configure the global default JVM parameters.
+   2. `Default Jvm Args(Project) Default JVM Args(Project) ` is used to configure the default JVM parameters at the project level. 
+
+3. Enter the relevant JVM parameters in the configuration as required and save them.
+
 > 在项目运行前添加默认的 JVM 参数。
 
 ## 主要特性
@@ -33,7 +74,9 @@
 ## 使用说明
 
 1. 打开设置，进入到 Tools 分组，操作路径为 `Settings/Preferences → Tools`。
-2. 在 Tools 分组下，有 `Default Jvm Args(Global)` 和 `Default Jvm Args(Project)` 配置项；`Default Jvm Args(Global)` 用于配置全局默认的 JVM 参数； `Default Jvm Args(Project)` 用于配置项目级别默认的 JVM 参数。
+2. 在 Tools 分组下，有 `Default Jvm Args(Global)` 和 `Default Jvm Args(Project)` 配置项。
+   1. `Default Jvm Args(Global)` 用于配置全局默认的 JVM 参数。
+   2. `Default Jvm Args(Project)` 用于配置项目级别默认的 JVM 参数。
 3. 根据需要在配置里输入相关的 JVM 参数保存。
 
 <!-- Plugin description end -->
